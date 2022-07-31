@@ -1,5 +1,4 @@
 /output
-/dl
 /.auto.deps
 /.config.cmd
 /.config.old
@@ -13,3 +12,5 @@
 *.rej
 *~
 *.pyc
+/dl/linux/
+/dl/qemu/
