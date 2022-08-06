@@ -15,6 +15,8 @@ endef
  
 define EXAMPLE_C_INSTALL_TARGET_CMDS
     $(INSTALL) -D -m 0755 $(@D)/example_c $(TARGET_DIR)/usr/bin
+	$(INSTALL) -D -m 0755 $(@D)/S99example_c \
+		$(TARGET_DIR)/etc/init.d/S99example_c
 endef
  
 define EXAMPLE_C_PERMISSIONS
