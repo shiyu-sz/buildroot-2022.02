@@ -2618,4 +2618,8 @@ menu "Text editors and viewers"
 	source "package/vim/Config.in"
 endmenu
 
+menu "My packages"
+	source "package/example_c/Config.in"
+endmenu
+
 endmenu

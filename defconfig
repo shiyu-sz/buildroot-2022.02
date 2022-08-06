@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Buildroot -ge3320eb Configuration
+# Buildroot -g438706fa-dirty Configuration
 #
 BR2_HAVE_DOT_CONFIG=y
 BR2_HOST_GCC_AT_LEAST_4_9=y
@@ -4088,6 +4088,11 @@ BR2_PACKAGE_SYSTEMD_BOOTCHART_ARCH_SUPPORTS=y
 # nano needs a toolchain w/ wchar
 #
 # BR2_PACKAGE_UEMACS is not set
+
+#
+# My packages
+#
+BR2_PACKAGE_EXAMPLE_C=y
 
 #
 # Filesystem images
