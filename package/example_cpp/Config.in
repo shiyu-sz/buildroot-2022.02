@@ -1,0 +1,4 @@
+config BR2_PACKAGE_EXAMPLE_CPP
+bool "example_cpp"
+help
+  cpp example.

@@ -2620,6 +2620,7 @@ endmenu
 
 menu "My packages"
 	source "package/example_c/Config.in"
+	source "package/example_cpp/Config.in"
 endmenu
 
 endmenu
