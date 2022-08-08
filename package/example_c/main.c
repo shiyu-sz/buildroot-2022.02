@@ -1,8 +1,13 @@
 
 #include <stdio.h>
+#include <unistd.h>
  
 int main()
 {
-    printf("buildroot helloworld\n");
+    while(1)
+    {
+        printf("buildroot helloworld!\n");
+        sleep(1);
+    }
     return 0;
 }
