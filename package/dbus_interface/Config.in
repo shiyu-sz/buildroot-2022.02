@@ -1,0 +1,4 @@
+config BR2_PACKAGE_DBUS_INTERFACE
+bool "dbus_interface"
+help
+  dbus_interface.

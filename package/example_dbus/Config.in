@@ -1,0 +1,4 @@
+config BR2_PACKAGE_EXAMPLE_DBUS
+bool "example_dbus"
+help
+  example_dbus.

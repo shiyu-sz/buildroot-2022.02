@@ -2622,6 +2622,8 @@ menu "My packages"
 	source "package/example_c/Config.in"
 	source "package/example_cpp/Config.in"
 	source "package/example_backtrace/Config.in"
+	source "package/dbus_interface/Config.in"
+	source "package/example_dbus/Config.in"
 endmenu
 
 endmenu
