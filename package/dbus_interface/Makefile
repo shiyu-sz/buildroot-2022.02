@@ -14,7 +14,7 @@ LIBS +=  -L${STAGING_DIR}/usr/lib \
 	-ldl -lm -ldbus-1
 
 %.o: %.c
-	$(CC) $(INCLUDES) $(CompileFlags) -c -o $@ $<
+	$(CC) $(INCLUDES) $(CompileFlags) -fPIC -c -o $@ $<
 
 $(TARGET): $(OBJS)
 	$(CC) -o $@ $(OBJS) $(LIBS) $(LDFLAGS) -fPIC -shared -DHAVE_CONFIG_H
