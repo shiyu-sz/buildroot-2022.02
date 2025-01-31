@@ -1,0 +1,4 @@
+config BR2_PACKAGE_EXAMPLE_UCI
+bool "example_uci"
+help
+  example_uci.

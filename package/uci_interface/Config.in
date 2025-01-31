@@ -1,0 +1,4 @@
+config BR2_PACKAGE_UCI_INTERFACE
+bool "uci_interface"
+help
+  uci_interface.

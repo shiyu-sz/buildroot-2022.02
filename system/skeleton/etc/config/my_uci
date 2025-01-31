@@ -1,0 +1,2 @@
+config interface 's1'
+	option o1 '10010'
