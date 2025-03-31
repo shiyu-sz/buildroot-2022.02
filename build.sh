@@ -22,6 +22,11 @@ build_all() {
     make -j10
 }
 
+build_package() {
+    make ${1}-rebuild
+    make
+}
+
 if test "$1" = "uboot" ; then
     build_uboot
 elif test "$1" = "linux" ; then
@@ -30,4 +35,6 @@ elif test "$1" = "clean" ; then
     build_clean
 elif test "$1" = "all" ; then
     build_all
+else
+    build_package $1
 fi

@@ -2,7 +2,7 @@
 TARGET = example_backtrace
 INCLUDES += -I./
 
-CompileFlags += -g -c -Wall -rdynamic
+CompileFlags += -ggdb3 -Wall -rdynamic
 
 SRCS = main.c add.c dump.c
 OBJS = $(SRCS:.c=.o)
@@ -15,7 +15,7 @@ LIBS +=  -L$(STAGING_DIR)/usr/lib \
 	$(CC) $(CFLAGS) $(INCLUDES) $(CompileFlags) -c -o $@ $<
 
 $(TARGET): $(OBJS)
-	$(CC) -o $@ $(OBJS) $(LIBS) $(LDFLAGS)
+	$(CC) -o $@ $(OBJS) $(LIBS) $(LDFLAGS) $(CompileFlags)
 
 all:$(TARGET)
 
