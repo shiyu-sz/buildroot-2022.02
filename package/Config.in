@@ -2626,6 +2626,7 @@ menu "My packages"
 	source "package/example_dbus/Config.in"
 	source "package/uci_interface/Config.in"
 	source "package/example_uci/Config.in"
+	source "package/example_libunwind/Config.in"
 endmenu
 
 endmenu
