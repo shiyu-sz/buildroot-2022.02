@@ -1,0 +1,4 @@
+config BR2_PACKAGE_EXAMPLE_LIBBACKTRACE
+bool "example_libbacktrace"
+help
+  example_libbacktrace.
