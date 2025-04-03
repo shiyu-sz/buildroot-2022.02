@@ -1,0 +1,4 @@
+config BR2_PACKAGE_EXAMPLE_BOOST_STACKTRACE
+bool "example_boost_stacktrace"
+help
+  example_boost_stacktrace.
