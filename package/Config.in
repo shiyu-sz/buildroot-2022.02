@@ -2629,6 +2629,7 @@ menu "My packages"
 	source "package/example_libunwind/Config.in"
 	source "package/example_libbacktrace/Config.in"
 	source "package/example_boost_stacktrace/Config.in"
+	source "package/rlottie/Config.in"
 endmenu
 
 endmenu
