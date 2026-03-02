@@ -3,5 +3,6 @@ menu "1-example"
 source "package/1-example/example_backtrace/Config.in"
 source "package/1-example/example_c/Config.in"
 source "package/1-example/example_qt/Config.in"
+source "package/1-example/lv_port_linux_v8/Config.in"
 
 endmenu
