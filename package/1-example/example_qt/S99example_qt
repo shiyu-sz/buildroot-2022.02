@@ -4,7 +4,7 @@
 #
 
 # 1. tslib 基础配置
-export TSLIB_TSDEVICE=/dev/input/event1  # 你的触摸屏设备节点
+export TSLIB_TSDEVICE=/dev/input/event2  # 你的触摸屏设备节点
 export TSLIB_CALIBFILE=/etc/pointercal   # 校准文件路径
 export TSLIB_CONFFILE=/etc/ts.conf       # 配置文件路径
 export TSLIB_PLUGINDIR=/usr/lib/ts       # tslib 插件路径
@@ -14,7 +14,7 @@ export TSLIB_FBDEVICE=/dev/fb0           # 帧缓冲设备
 # export QT_QPA_EGLFS_TSLIB=1 
 
 # 如果你使用的是 linuxfb (针对你之前 eglfs 报错的情况)
-export QT_QPA_GENERIC_PLUGINS=tslib:/dev/input/event1
+export QT_QPA_GENERIC_PLUGINS=tslib:/dev/input/event2
 export QT_QPA_PLATFORM=linuxfb:fb=/dev/fb0
 export QT_QPA_FONTDIR=/usr/lib/fonts
 
