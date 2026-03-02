@@ -32,10 +32,15 @@ build_x86_64() {
 }
 
 run_x86_64() {
-    qemu-system-x86_64 -M pc -kernel output/images/bzImage \
+    qemu-system-x86_64 -M pc \
+        -kernel output/images/bzImage \
         -drive file=output/images/rootfs.ext2,if=virtio,format=raw \
         -append "rootwait root=/dev/vda console=tty1 console=ttyS0" \
-        -serial stdio -net nic,model=virtio -net user
+        -serial stdio \
+        -net nic,model=virtio \
+        -net user \
+        -device virtio-vga \
+        -display gtk
 }
 
 build_package() {
