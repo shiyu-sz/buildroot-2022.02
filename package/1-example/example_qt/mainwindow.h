@@ -3,6 +3,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QtWidgets>
 
 class MainWindow : public QMainWindow
 {
@@ -12,12 +13,16 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+    bool event(QEvent *event);
+
+    QPushButton *button = NULL;
+    
 protected:
 
 private:
 
 protected slots:
-
+    void slots_button_clicked();
 private:
 
 private:
