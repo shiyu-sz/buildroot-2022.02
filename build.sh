@@ -1,20 +1,12 @@
 #!/bin/bash
 
-build_uboot() {
-    make uboot-rebuild
-}
-
-build_linux() {
-    make linux-rebuild
-}
-
 build_clean() {
     rm -rf output
     rm .config
     rm .config.old
 }
 
-build_all() {
+build_aarch64() {
     rm -rf output
     rm .config
     rm .config.old
@@ -22,19 +14,45 @@ build_all() {
     make -j10
 }
 
+run_aarch64() {
+    qemu-system-aarch64 -M virt -cpu cortex-a53 -nographic -smp 1 \
+        -kernel output/images/Image \
+        -append "rootwait root=/dev/vda console=ttyAMA0" \
+        -netdev user,id=eth0 -device virtio-net-device,netdev=eth0 \
+        -drive file=output/images/rootfs.ext4,if=none,format=raw,id=hd0 \
+        -device virtio-blk-device,drive=hd0
+}
+
+build_x86_64() {
+    rm -rf output
+    rm .config
+    rm .config.old
+    cp qemu_x86_64_defconfig .config
+    make -j10
+}
+
+run_x86_64() {
+    qemu-system-x86_64 -M pc -kernel output/images/bzImage \
+        -drive file=output/images/rootfs.ext2,if=virtio,format=raw \
+        -append "rootwait root=/dev/vda console=tty1 console=ttyS0" \
+        -serial stdio -net nic,model=virtio -net user
+}
+
 build_package() {
     make ${1}-rebuild
     make
 }
 
-if test "$1" = "uboot" ; then
-    build_uboot
-elif test "$1" = "linux" ; then
-    build_linux
-elif test "$1" = "clean" ; then
+if [ "$1" = "clean" ]; then
     build_clean
-elif test "$1" = "all" ; then
-    build_all
+elif [ "$1" = "aarch64" ]; then
+    build_aarch64
+elif [ "$1" = "run_aarch64" ]; then
+    run_aarch64
+elif [ "$1" = "x86_64" ]; then
+    build_x86_64
+elif [ "$1" = "run_x86_64" ]; then
+    run_x86_64
 else
     build_package $1
 fi
