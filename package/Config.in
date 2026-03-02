@@ -1,5 +1,6 @@
 menu "Target packages"
 
+	source "package/1-example/Config.in"
 	source "package/busybox/Config.in"
 	source "package/skeleton/Config.in"
 	source "package/skeleton-custom/Config.in"
@@ -2618,19 +2619,6 @@ menu "Text editors and viewers"
 	source "package/nano/Config.in"
 	source "package/uemacs/Config.in"
 	source "package/vim/Config.in"
-endmenu
-
-menu "My packages"
-	source "package/example_c/Config.in"
-	source "package/example_cpp/Config.in"
-	source "package/example_backtrace/Config.in"
-	source "package/dbus_interface/Config.in"
-	source "package/example_dbus/Config.in"
-	source "package/uci_interface/Config.in"
-	source "package/example_uci/Config.in"
-	source "package/example_libunwind/Config.in"
-	source "package/example_libbacktrace/Config.in"
-	source "package/example_boost_stacktrace/Config.in"
 endmenu
 
 endmenu

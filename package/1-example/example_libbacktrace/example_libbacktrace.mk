@@ -5,7 +5,7 @@
 ################################################################################
  
 EXAMPLE_LIBBACKTRACE_VERSION:= 1.0.0
-EXAMPLE_LIBBACKTRACE_SITE:= $(TOPDIR)/package/example_libbacktrace
+EXAMPLE_LIBBACKTRACE_SITE:= $(TOPDIR)/package/1-example/example_libbacktrace
 EXAMPLE_LIBBACKTRACE_SITE_METHOD:=local
 EXAMPLE_LIBBACKTRACE_INSTALL_TARGET:=YES
 EXAMPLE_LIBBACKTRACE_DEPENDENCIES = libbacktrace

@@ -5,7 +5,7 @@
 ################################################################################
  
 EXAMPLE_CPP_VERSION:= 1.0.0
-EXAMPLE_CPP_SITE:= $(TOPDIR)/package/example_cpp
+EXAMPLE_CPP_SITE:= $(TOPDIR)/package/1-example/example_cpp
 EXAMPLE_CPP_SITE_METHOD:=local
 EXAMPLE_CPP_INSTALL_TARGET:=YES
  

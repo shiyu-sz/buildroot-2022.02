@@ -5,7 +5,7 @@
 ################################################################################
  
 EXAMPLE_LIBUNWIND_VERSION:= 1.0.0
-EXAMPLE_LIBUNWIND_SITE:= $(TOPDIR)/package/example_libunwind
+EXAMPLE_LIBUNWIND_SITE:= $(TOPDIR)/package/1-example/example_libunwind
 EXAMPLE_LIBUNWIND_SITE_METHOD:=local
 EXAMPLE_LIBUNWIND_INSTALL_TARGET:=YES
 EXAMPLE_LIBUNWIND_DEPENDENCIES = libunwind

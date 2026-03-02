@@ -5,7 +5,7 @@
 ################################################################################
  
 EXAMPLE_BOOST_STACKTRACE_VERSION:= 1.0.0
-EXAMPLE_BOOST_STACKTRACE_SITE:= $(TOPDIR)/package/example_boost_stacktrace
+EXAMPLE_BOOST_STACKTRACE_SITE:= $(TOPDIR)/package/1-example/example_boost_stacktrace
 EXAMPLE_BOOST_STACKTRACE_SITE_METHOD:=local
 EXAMPLE_BOOST_STACKTRACE_INSTALL_TARGET:=YES
 EXAMPLE_BOOST_STACKTRACE_DEPENDENCIES = boost

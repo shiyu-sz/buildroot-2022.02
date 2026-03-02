@@ -5,7 +5,7 @@
 ################################################################################
  
 EXAMPLE_UCI_VERSION= 1.0.0
-EXAMPLE_UCI_SITE= $(TOPDIR)/package/example_uci
+EXAMPLE_UCI_SITE= $(TOPDIR)/package/1-example/example_uci
 EXAMPLE_UCI_SITE_METHOD=local
 EXAMPLE_UCI_INSTALL_TARGET=YES
 EXAMPLE_UCI_DEPENDENCIES = uci_interface

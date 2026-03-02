@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Buildroot -g52d99ac5-dirty Configuration
+# Buildroot -gca7f2930-dirty Configuration
 #
 BR2_HAVE_DOT_CONFIG=y
 BR2_HOST_GCC_AT_LEAST_4_9=y
@@ -528,6 +528,13 @@ BR2_LINUX_KERNEL_NEEDS_HOST_LIBELF=y
 #
 # Target packages
 #
+
+#
+# 1-example
+#
+# BR2_PACKAGE_EXAMPLE_BACKTRACE is not set
+# BR2_PACKAGE_EXAMPLE_C is not set
+BR2_PACKAGE_EXAMPLE_QT=y
 BR2_PACKAGE_BUSYBOX=y
 BR2_PACKAGE_BUSYBOX_CONFIG="package/busybox/busybox.config"
 BR2_PACKAGE_BUSYBOX_CONFIG_FRAGMENT_FILES=""
@@ -2709,20 +2716,6 @@ BR2_PACKAGE_XVISOR_ARCH_SUPPORTS=y
 # BR2_PACKAGE_MOST is not set
 # BR2_PACKAGE_NANO is not set
 # BR2_PACKAGE_UEMACS is not set
-
-#
-# My packages
-#
-# BR2_PACKAGE_EXAMPLE_C is not set
-# BR2_PACKAGE_EXAMPLE_CPP is not set
-# BR2_PACKAGE_EXAMPLE_BACKTRACE is not set
-# BR2_PACKAGE_DBUS_INTERFACE is not set
-# BR2_PACKAGE_EXAMPLE_DBUS is not set
-# BR2_PACKAGE_UCI_INTERFACE is not set
-# BR2_PACKAGE_EXAMPLE_UCI is not set
-# BR2_PACKAGE_EXAMPLE_LIBUNWIND is not set
-# BR2_PACKAGE_EXAMPLE_LIBBACKTRACE is not set
-# BR2_PACKAGE_EXAMPLE_BOOST_STACKTRACE is not set
 
 #
 # Filesystem images

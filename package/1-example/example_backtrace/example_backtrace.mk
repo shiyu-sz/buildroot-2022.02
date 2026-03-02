@@ -5,7 +5,7 @@
 ################################################################################
  
 EXAMPLE_BACKTRACE_VERSION:= 1.0.0
-EXAMPLE_BACKTRACE_SITE:= $(TOPDIR)/package/example_backtrace
+EXAMPLE_BACKTRACE_SITE:= $(TOPDIR)/package/1-example/example_backtrace
 EXAMPLE_BACKTRACE_SITE_METHOD:=local
 EXAMPLE_BACKTRACE_INSTALL_TARGET:=YES
  

@@ -5,7 +5,7 @@
 ################################################################################
  
 EXAMPLE_DBUS_VERSION= 1.0.0
-EXAMPLE_DBUS_SITE= $(TOPDIR)/package/example_dbus
+EXAMPLE_DBUS_SITE= $(TOPDIR)/package/1-example/example_dbus
 EXAMPLE_DBUS_SITE_METHOD=local
 EXAMPLE_DBUS_INSTALL_TARGET=YES
 EXAMPLE_DBUS_DEPENDENCIES = dbus_interface
